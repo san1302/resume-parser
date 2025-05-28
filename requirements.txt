@@ -1,0 +1,15 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+pdfplumber==0.11.4
+python-docx==1.0.1
+spacy==3.7.2
+pytesseract==0.3.10
+# Textract dependencies (installed separately due to metadata issues)
+chardet>=3.0.0
+docx2txt>=0.8
+extract-msg<0.29.0
+pdfminer.six>=20191110
+beautifulsoup4>=4.8.0
+xlrd>=1.2.0
+EbookLib>=0.17.1
