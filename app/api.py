@@ -17,7 +17,12 @@ app = FastAPI(title="Resume Parser API",
 # Add CORS middleware to allow requests from our Next.js app
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this in production to be more specific
+    allow_origins=[
+        "http://localhost:3000",  # Local development
+        "https://hire-genie-git-main-sanchitagarwal0332-gmailcoms-projects.vercel.app", 
+         "https://www.hiregenie.io" # Replace with your actual Vercel domain
+        # "https://*.vercel.app"  # All Vercel preview deployments
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
